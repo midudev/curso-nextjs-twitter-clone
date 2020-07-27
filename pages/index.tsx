@@ -1,12 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import {useRouter} from 'next/router'
 import AppLayout from '../components/AppLayout'
 // devit
 
 export default function Home() {
-  const router = useRouter()
-
   return (
     <>
       <Head>
@@ -19,10 +16,8 @@ export default function Home() {
           <a href="https://nextjs.org">devter</a>
         </h1>
         <nav>
-          <Link href='/timeline'>
-            <a>
-              timeline
-            </a>
+          <Link href="/timeline">
+            <a>timeline</a>
           </Link>
         </nav>
       </AppLayout>
