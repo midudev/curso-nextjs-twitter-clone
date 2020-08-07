@@ -15,3 +15,10 @@ La rama `master` sería empezar desde cero el proyecto y podrías seguir desde e
 [![Aprendiendo React desde cero](https://img.youtube.com/vi/UlYGGCNFcWo/mqdefault.jpg)](https://www.youtube.com/watch?v=UlYGGCNFcWo)
 
 [📝 Código](https://github.com/midudev/curso-nextjs-twitter-clone/tree/02-styled-jsx-login-con-github) - [▶️ Vídeo](https://youtu.be/2jxc8DMzt0I)
+
+---
+
+### [3. Creando la página Home y configurando ESLINT y PRETTIER en nuestro proyecto](https://www.youtube.com/watch?v=EEDRcolSHms)
+[![Aprendiendo React desde cero](https://img.youtube.com/vi/EEDRcolSHms/mqdefault.jpg)](https://www.youtube.com/watch?v=EEDRcolSHms)
+
+[📝 Código](https://github.com/midudev/curso-nextjs-twitter-clone/tree/03-add-lint-and-prettier-and-more) - [▶️ Vídeo](https://youtu.be/EEDRcolSHms)
