@@ -1,11 +1,9 @@
-import { colors } from "../../styles/theme";
+import { colors } from "../../styles/theme"
 
-export default function Button ({ children, onClick }) {
+export default function Button({ children, onClick }) {
   return (
     <>
-      <button onClick={onClick}>
-        {children}
-      </button>
+      <button onClick={onClick}>{children}</button>
       <style jsx>{`
         button {
           align-items: center;
@@ -18,7 +16,7 @@ export default function Button ({ children, onClick }) {
           font-size: 16px;
           font-weight: 800;
           padding: 8px 24px;
-          transition: opacity .3s ease;
+          transition: opacity 0.3s ease;
         }
 
         button > :global(svg) {
@@ -26,7 +24,7 @@ export default function Button ({ children, onClick }) {
         }
 
         button:hover {
-          opacity: .7;
+          opacity: 0.7;
         }
       `}</style>
     </>
