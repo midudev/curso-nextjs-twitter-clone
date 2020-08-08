@@ -34,6 +34,7 @@ export default function HomePage() {
         header {
           align-items: center;
           border-bottom: 1px solid #ccc;
+          background-color: #fff;
           height: 49px;
           display: flex;
           position: sticky;
@@ -47,14 +48,18 @@ export default function HomePage() {
         }
 
         section {
-          padding-top: 49px;
+          overflow: auto;
+          height: calc(
+            100% - 98px
+          ); //100% - el valor de altura del head y el nav
         }
 
         nav {
           bottom: 0;
+          background-color: #000;
           border-top: 1px solid #ccc;
           height: 49px;
-          position: sticky;
+          position: absolute;
           width: 100%;
         }
       `}</style>

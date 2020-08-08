@@ -36,6 +36,7 @@ export default css`
     height: 100%;
     position: relative;
     width: 100%;
+    overflow: hidden;
   }
 
   @media (min-width: ${breakpoints.mobile}) {
