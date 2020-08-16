@@ -22,3 +22,10 @@ La rama `master` sería empezar desde cero el proyecto y podrías seguir desde e
 [![Aprendiendo React desde cero](https://img.youtube.com/vi/EEDRcolSHms/mqdefault.jpg)](https://www.youtube.com/watch?v=EEDRcolSHms)
 
 [📝 Código](https://github.com/midudev/curso-nextjs-twitter-clone/tree/03-add-lint-and-prettier-and-more) - [▶️ Vídeo](https://youtu.be/EEDRcolSHms)
+
+---
+
+### [4. Usando Firestore de Firebase para crear y leer tweets](https://www.youtube.com/watch?v=W5y79Je-Rfs)
+[![Aprendiendo React desde cero](https://img.youtube.com/vi/W5y79Je-Rfs/mqdefault.jpg)](https://www.youtube.com/watch?v=W5y79Je-Rfs)
+
+[📝 Código](https://github.com/midudev/curso-nextjs-twitter-clone/tree/04-firestore-for-creating-tweets) - [▶️ Vídeo](https://youtu.be/W5y79Je-Rfs)
