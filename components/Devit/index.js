@@ -50,6 +50,10 @@ export default function Devit({
           margin: 0;
         }
 
+        span {
+          margin: 0 5px;
+        }
+
         date {
           color: #555;
           font-size: 14px;
