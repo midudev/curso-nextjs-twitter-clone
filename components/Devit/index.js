@@ -10,7 +10,7 @@ export default function Devit({ avatar, userName, content, createdAt, id }) {
         <section>
           <header>
             <strong>{userName}</strong>
-            <span> · </span>
+            <span>·</span>
             <date>{createdAt}</date>
           </header>
           <p>{content}</p>
@@ -30,6 +30,10 @@ export default function Devit({ avatar, userName, content, createdAt, id }) {
         p {
           line-height: 1.3125;
           margin: 0;
+        }
+
+        span {
+          margin: 0 5px;
         }
 
         date {
