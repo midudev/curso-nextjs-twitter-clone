@@ -5,6 +5,7 @@ import AppLayout from "components/AppLayout"
 import Button from "components/Button"
 import GitHub from "components/Icons/GitHub"
 import Logo from "components/Icons/Logo"
+import Loading from "components/Loading"
 
 import { colors } from "styles/theme"
 
@@ -51,7 +52,7 @@ export default function Home() {
                 Login with GitHub
               </Button>
             )}
-            {user === USER_STATES.NOT_KNOWN && <img src="/spinner.gif" />}
+            {user === USER_STATES.NOT_KNOWN && <Loading size={45} />}
           </div>
         </section>
       </AppLayout>
