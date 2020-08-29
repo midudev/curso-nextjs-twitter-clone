@@ -30,3 +30,6 @@ yarn-error.log*
 .env.production.local
 
 .eslintcache
+
+# firebase keys
+firebase/firebase-keys.json

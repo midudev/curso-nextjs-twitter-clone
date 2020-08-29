@@ -1,7 +1,6 @@
 import { useEffect } from "react"
 import Head from "next/head"
 
-import AppLayout from "components/AppLayout"
 import Button from "components/Button"
 import GitHub from "components/Icons/GitHub"
 import Logo from "components/Icons/Logo"
@@ -34,27 +33,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AppLayout>
-        <section>
-          <Logo width="100" />
-          <h1>Devter</h1>
-          <h2>
-            Talk about development
-            <br />
-            with developers 👩‍💻👨‍💻
-          </h2>
+      <section>
+        <Logo width="100" />
+        <h1>Devter</h1>
+        <h2>
+          Talk about development
+          <br />
+          with developers 👩‍💻👨‍💻
+        </h2>
 
-          <div>
-            {user === USER_STATES.NOT_LOGGED && (
-              <Button onClick={handleClick}>
-                <GitHub fill="#fff" width={24} height={24} />
-                Login with GitHub
-              </Button>
-            )}
-            {user === USER_STATES.NOT_KNOWN && <img src="/spinner.gif" />}
-          </div>
-        </section>
-      </AppLayout>
+        <div>
+          {user === USER_STATES.NOT_LOGGED && (
+            <Button onClick={handleClick}>
+              <GitHub fill="#fff" width={24} height={24} />
+              Login with GitHub
+            </Button>
+          )}
+          {user === USER_STATES.NOT_KNOWN && <img src="/spinner.gif" />}
+        </div>
+      </section>
 
       <style jsx>{`
         img {
