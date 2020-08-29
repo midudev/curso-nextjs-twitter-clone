@@ -35,4 +35,11 @@ La rama `master` sería empezar desde cero el proyecto y podrías seguir desde e
 ### [5. Subir imágenes en Firebase Storage y crear TimeAgo desde cero](https://www.youtube.com/watch?v=AiyiiXXChwo)
 [![Aprendiendo React desde cero](https://img.youtube.com/vi/AiyiiXXChwo/mqdefault.jpg)](https://www.youtube.com/watch?v=AiyiiXXChwo)
 
-[📝 Código](05-upload-images-firebase-storage-timeago-without-deps) - [▶️ Vídeo](https://youtu.be/W5y79Je-Rfs)
+[📝 Código](https://github.com/midudev/curso-nextjs-twitter-clone/tree/05-upload-images-firebase-storage-timeago-without-deps) - [▶️ Vídeo](https://youtu.be/W5y79Je-Rfs)
+
+---
+
+### [6. Subir imágenes en Firebase Storage y crear TimeAgo desde cero](https://www.youtube.com/watch?v=i16PlS9aTJU)
+[![Aprendiendo React desde cero](https://img.youtube.com/vi/i16PlS9aTJU/mqdefault.jpg)](https://www.youtube.com/watch?v=i16PlS9aTJU)
+
+[📝 Código](https://github.com/midudev/curso-nextjs-twitter-clone/tree/06-dynamic-routing-data-fetching) - [▶️ Vídeo](https://youtu.be/i16PlS9aTJU)
