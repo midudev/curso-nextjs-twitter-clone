@@ -43,3 +43,10 @@ La rama `master` sería empezar desde cero el proyecto y podrías seguir desde e
 [![Aprendiendo React desde cero](https://img.youtube.com/vi/i16PlS9aTJU/mqdefault.jpg)](https://www.youtube.com/watch?v=i16PlS9aTJU)
 
 [📝 Código](https://github.com/midudev/curso-nextjs-twitter-clone/tree/06-dynamic-routing-data-fetching) - [▶️ Vídeo](https://youtu.be/i16PlS9aTJU)
+
+--- 
+
+### [7. Actualizaciones en tiempo real con Firestore y archivos .ENV en NextJS](https://www.youtube.com/watch?v=8ZA2p1SBssk)
+[![Aprendiendo React desde cero](https://img.youtube.com/vi/8ZA2p1SBssk/mqdefault.jpg)](https://www.youtube.com/watch?v=8ZA2p1SBssk)
+
+[📝 Código](https://github.com/midudev/curso-nextjs-twitter-clone/tree/07-realtime-firestore-environment-variables) - [▶️ Vídeo](https://youtu.be/8ZA2p1SBssk)
