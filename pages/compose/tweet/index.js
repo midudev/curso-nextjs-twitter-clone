@@ -6,6 +6,7 @@ import { addDevit, uploadImage } from "firebase/client"
 import { useRouter } from "next/router"
 import Head from "next/head"
 import Avatar from "components/Avatar"
+import LengthCounter from "components/length-counter"
 
 const COMPOSE_STATES = {
   USER_NOT_KNOWN: 0,
@@ -32,6 +33,8 @@ export default function ComposeTweet() {
 
   const user = useUser()
   const router = useRouter()
+
+  const maxLength = 280
 
   useEffect(() => {
     if (task) {
@@ -90,13 +93,35 @@ export default function ComposeTweet() {
     setTask(task)
   }
 
-  const isButtonDisabled = !message.length || status === COMPOSE_STATES.LOADING
+  const isButtonDisabled =
+    !message.length ||
+    message.length > maxLength ||
+    status === COMPOSE_STATES.LOADING
 
   return (
     <>
       <Head>
         <title>Crear un Devit / Devter</title>
       </Head>
+      {message.length > maxLength && (
+        <p>
+          <svg
+            className=""
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+            />
+          </svg>
+          Excediste el maximo de caracteres para Devitear
+        </p>
+      )}
       <section className="form-container">
         {user && (
           <section className="avatar-container">
@@ -120,6 +145,7 @@ export default function ComposeTweet() {
           )}
           <div>
             <Button disabled={isButtonDisabled}>Devitear</Button>
+            <LengthCounter characters={message.length} maxLength={maxLength} />
           </div>
         </form>
       </section>
@@ -127,6 +153,25 @@ export default function ComposeTweet() {
       <style jsx>{`
         div {
           padding: 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        p {
+          display: flex;
+          align-items: center;
+          background-color: #e0245e;
+          padding: 5px;
+          padding-left: 10px;
+          margin: 0;
+          font-size: 0.8rem;
+          color: white;
+          letter-spacing: 0.05rem;
+        }
+        p > :global(svg) {
+          width: 1rem;
+          height: 1rem;
+          margin-right: 0.5rem;
         }
 
         .avatar-container {
@@ -158,6 +203,8 @@ export default function ComposeTweet() {
 
         form {
           padding: 10px;
+          width: 100%;
+          position: relative;
         }
 
         img {
